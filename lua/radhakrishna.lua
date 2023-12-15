@@ -68,7 +68,7 @@ Radhakrishna.config = {
   transparent_mode = false,
 }
 
--- main gruvbox color palette
+-- main radhakrishna color palette
 ---@class RadhakrishnaPalette
 Radhakrishna.palette = {
   dark0_hard = "#040401ff",
@@ -79,11 +79,11 @@ Radhakrishna.palette = {
   dark3 = "#267A04ff",
   dark4 = "#8a8f8dff",
   light0_hard = "#fefefeff",
-  light0 = "#dfeff5ff",
-  light0_soft = "#f8e88aff",
-  light1 = "#fa6086ff",
-  light2 = "#fdeb03ff",
-  light3 = "#f8e88aff",
+  light0 = "#ffffff",      -- Bright and vivid white
+  light0_soft = "#ffffff", -- Bright and vivid white
+  light1 = "#fa6086ff",    -- Bright and vivid pink
+  light2 = "#fdeb03ff",    -- Bright and vivid yellow
+  light3 = "#f8e88aff",    -- Bright and vivid flax
   light4 = "#8a8f8dff",
   bright_red = "#fd6848ff",
   bright_green = "#267A04ff",
@@ -125,9 +125,7 @@ Radhakrishna.palette = {
   light_aqua = "#dfeff5ff",
   light_aqua_soft = "#dfeff5ff",
   gray = "#685d2bff",
-}
-
--- get a hex list of gruvbox colors based on current bg and constrast config
+} -- get a hex list of radhakrishna colors based on current bg and constrast config
 local function get_colors()
   local p = Radhakrishna.palette
   local config = Radhakrishna.config
@@ -1060,7 +1058,7 @@ end
 --- main load function
 Radhakrishna.load = function()
   if vim.version().minor < 8 then
-    vim.notify_once("gruvbox.nvim: you must use neovim 0.8 or higher")
+    vim.notify_once("radhakrishna.nvim: you must use neovim 0.8 or higher")
     return
   end
 
@@ -1068,7 +1066,7 @@ Radhakrishna.load = function()
   if vim.g.colors_name then
     vim.cmd.hi("clear")
   end
-  vim.g.colors_name = "gruvbox"
+  vim.g.colors_name = "radhakrishna"
   vim.o.termguicolors = true
 
   local groups = get_groups()
