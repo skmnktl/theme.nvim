@@ -1,0 +1,36 @@
+[information]
+  name = "radha"
+  background = "dark"
+  author = 'kasyap'
+
+[palette]
+  mutedyellow='#e1e340ff'
+  aureolin='#f3e50eff'
+  tomato='#fd6848ff'
+  columbiablue='#d1e9f4ff'
+  brightpinkcrayola='#fa6086ff'
+  fg='#8a8f8dff' # battleshipgray
+  bg='#040401ff' # black
+  avocado='#5c7a21ff'
+  paleazure='#90dcfcff'
+  officegreen='#277900ff'
+  yellowgreen='#b2d970ff'
+  mikadoyellow='#FCC60Aff'
+  lightgray = '#B5B9B6'
+
+[highlights]
+ Normal = 'fg bg'
+ SignColumn = '- bg'
+ MsgArea = 'fg bg'
+ ModeMsg = 'fg bg'
+ MsgSeparator = 'fg bg'
+ SpellBad = 'tomato - u'
+ SpellCap = 'mutedyellow - u'
+ SpellLocal = 'officegreen - u'
+ SpellRare = 'yellowgreen - u'
+ NormalNC = 'fg bg'
+ Pmenu = 'officegreen bg - - 50'
+ PmenuSel = '- columbiablue'
+ WildMenu = 'fg columbiablue'
+ CursorLineNr = 'lightgray - b'
+ Comment = 'lightgray - i'
